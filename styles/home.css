@@ -1,14 +1,10 @@
+/*This code works for the whole body of the project home*/
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: blueviolet;
+    color: black;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
+/*The navigation of the whole homepage*/
 nav {
     background-color: #333;
 }
@@ -52,3 +48,40 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/*The header section of the home page*/
+#header {
+    text-align: center;
+}
+
+/*The grid system for the tool*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+}
+
+
